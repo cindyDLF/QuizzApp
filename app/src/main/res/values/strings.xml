@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">QuizzApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_quizz">Quizz</string>
+    <string name="admin">Admin</string>
+    <string name="quizz">Quizz</string>
+    <string name="title_activity_admin">Admin</string>
+    <string name="editQuestion">Edit Questions</string>
+    <string name="editAnswer_1">Edit first reponse</string>
+    <string name="editAnswer_2">Edit second reponse</string>
+    <string name="editAnswer_3">Edit third reponse</string>
+    <string name="editCorrectResponse">Edit correct reponse</string>
+    <string name="validateButton">Validate</string>
+</resources>
