@@ -15,7 +15,7 @@
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/editQuestion"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="30dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="60dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="100dp"
             android:layout_marginStart="100dp" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="100dp"
@@ -67,4 +67,14 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="175dp"
             android:layout_marginRight="175dp" android:layout_marginBottom="77dp"
             app:layout_constraintBottom_toBottomOf="parent" android:onClick="editQuizz"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" android:layout_marginBottom="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/editQuestion" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="175dp" android:layout_marginStart="175dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="177dp"
+            android:layout_marginRight="177dp" android:textSize="20dp"/>
 </android.support.constraint.ConstraintLayout>

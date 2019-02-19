@@ -11,4 +11,5 @@
     <string name="editAnswer_3">Edit third reponse</string>
     <string name="editCorrectResponse">Edit correct reponse</string>
     <string name="validateButton">Validate</string>
+    <string name="username">Enter your username</string>
 </resources>

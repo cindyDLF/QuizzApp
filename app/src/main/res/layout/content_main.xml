@@ -27,4 +27,15 @@
             android:layout_marginLeft="162dp" android:layout_marginStart="162dp" android:layout_marginBottom="323dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="161dp" android:layout_marginRight="161dp" android:onClick="btnAdmin"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/inputName" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="56dp" android:layout_marginBottom="62dp"
+            app:layout_constraintBottom_toTopOf="@+id/quizz" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="100dp" android:layout_marginStart="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="100dp" android:layout_marginRight="100dp" android:hint="@string/username"/>
 </android.support.constraint.ConstraintLayout>

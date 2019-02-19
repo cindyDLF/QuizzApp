@@ -2,6 +2,7 @@ package com.example.quizzapp
 
 import android.content.DialogInterface
 import android.os.Bundle
+import android.provider.AlarmClock
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity;
@@ -29,6 +30,10 @@ class Quizz : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
+
+        var play = "Welcome to the game " + intent.getStringExtra(AlarmClock.EXTRA_MESSAGE)
+
+        username.text = play
 
         completeQuizz.add(QuizzData("2 + 2 ?", "3", "4", "7", 2))
         completeQuizz.add(QuizzData("18 + 1 ?", "5", "9", "19", 3))

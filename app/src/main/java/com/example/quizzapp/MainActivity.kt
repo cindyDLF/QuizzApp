@@ -2,6 +2,7 @@ package com.example.quizzapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.AlarmClock
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu
@@ -9,8 +10,11 @@ import android.view.MenuItem
 import android.view.View
 
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    var username = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,13 +43,18 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun getusername() {
+         username = inputName.text.toString()
+    }
+
     fun btnQuizz(view: View) {
-        val quizzActivity = Intent(this,Quizz::class.java)
+
+        val quizzActivity = Intent(this,Quizz::class.java).apply { putExtra(AlarmClock.EXTRA_MESSAGE, inputName.text.toString()) }
         startActivity( Intent(quizzActivity))
     }
 
     fun btnAdmin(view: View) {
-        val adminActivity = Intent(this, Admin::class.java)
+        val adminActivity = Intent(this, Admin::class.java).apply { putExtra(AlarmClock.EXTRA_MESSAGE, inputName.text.toString()) }
         startActivity( Intent(adminActivity))
     }
 }
